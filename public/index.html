@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/app.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tag above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>User App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>User App</h1>
+      </header>
+      <div id="root"></div>
+      <section>
+        <h2>User Info</h2>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">User Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5bb34d641fd7b7779f9678b4</td>
+              <td>Noman</td>
+              <td>nomi</td>
+              <td>noman@gmail.com</td>
+              <td>25</td>
+              <td>Male</td>
+              <td>Lahore</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>User List</h2>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">User Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Location</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5bb34d641fd7b7779f9678b4</td>
+              <td>Noman</td>
+              <td>nomi</td>
+              <td>noman@gmail.com</td>
+              <td>25</td>
+              <td>Male</td>
+              <td>Lahore</td>
+              <td>
+                <button type="button" class="btn btn-dark linkdeleteuser" rel="5bb34d641fd7b7779f9678b4">Delete</button>
+                <button type="button" class="btn btn-dark loadedituser" rel="5bb34d641fd7b7779f9678b4">Edit</button>
+               </td>
+            </tr>
+            <tr>
+              <td>5bb355661b57d17edabf2a91</td>
+              <td>Kamran</td>
+              <td>kami</td>
+              <td>kamran@gmail.com</td>
+              <td>29</td>
+              <td>Male</td>
+              <td>Lahore</td>
+              <td>
+                <button type="button" class="btn btn-dark linkdeleteuser" rel="5bb355661b57d17edabf2a91">Delete</button>
+                <button type="button" class="btn btn-dark loadedituser" rel="5bb355661b57d17edabf2a91">Edit</button>
+               </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>User Form</h2>
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="email" class="form-control" name="username" value="">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" name="email" value="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" class="form-control" name="full_name" value="">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control" name="age" value="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" name="location" value="">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div class="radios">
+                  Male <input type="radio" name="gender" value="Male">
+                  Female <input type="radio" name="gender" value="Female">
+                  Other <input type="radio" name="gender" value="Other">
+                </div>
+              </div>
+            </div>
+          </div>
+          <input type="hidden" name="user_action" value="add_user">
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+      </section>
+    </div>
+    <script type="text/javascript" src="%PUBLIC_URL%/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/js/app.js"></script>
+  </body>
+</html>
