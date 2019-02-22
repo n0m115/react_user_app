@@ -5,3 +5,26 @@
 .h2, h2 {
     font-size: 1.5rem;
 }
+
+.loadedituser {
+    margin-left: 2px;
+}
+
+#navbarNavDropdown {
+    background-color: #212529;
+}
+
+nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link, body .btn {
+    color: #fff !important;
+}
+
+.navbar {
+    padding: 10px 0px;
+}
+
+/*.nav-link.active, */
+.nav-link:hover, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    background: #000;
+}

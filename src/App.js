@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Home from './components/Home';
 import Navigation from './components/Navigation';
-import NotFound from './components/NotFound';
+import Header from './components/Header';
+import RegisterForm from './components/RegisterForm';
 
 class App extends Component {
   render() {
     return (
-      <div>App</div>
+      <div className="container">
+        {/*Component*/}
+        <Header />
+        <section>
+          {/*Component*/}
+          <Navigation />
+          <h2>User Form</h2>
+          {/*Component*/}
+          <RegisterForm />
+        </section>
+      </div>
     );
   }
 }
