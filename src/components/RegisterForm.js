@@ -20,8 +20,8 @@ const RegisterForm = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="form-group">
-                <label htmlFor="full_name">Full Name</label>
-                <input type="text" className="form-control" name="full_name" value="" />
+                <label htmlFor="fullname">Full Name</label>
+                <input type="text" className="form-control" name="fullname" value="" />
               </div>
             </div>
             <div className="col-md-6">
