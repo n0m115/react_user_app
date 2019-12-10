@@ -14,7 +14,17 @@ export const getUser = curUserId => {
         .then(response => response.data);
 };
 
-export const updateUser = (userData) => {
+export const addUser = userData => {
+    return axios.post(`${apiURL}/user`, userData)
+        .then(response => response.data);
+};
+
+export const updateUser = userData => {
     return axios.put(`${apiURL}/user/${userData._id}`, userData)
+        .then(response => response.data);
+};
+
+export const deleteUser = userId => {
+    return axios.delete(`${apiURL}/user/${userId}`)
         .then(response => response.data);
 };
