@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+const gendersList = ['male', 'female', 'other'];
 
 class GenderInput extends Component {
-
-  // property to enlist genders
-  gendersList = ['male', 'female', 'other'];
 
   render() {
     return(
       <div className="form-group">
         Gender
         <div className="radios">
-          {this.gendersList.map((gender, index) => {
+          {gendersList.map((gender, index) => {
             return <label htmlFor="gender" key={ index }>
               {gender.charAt(0).toUpperCase() + gender.substr(1).toLowerCase()}
               <input 
@@ -26,6 +26,11 @@ class GenderInput extends Component {
       </div>
     );
   }
+}
+
+GenderInput.propTypes = {
+  activeGender: PropTypes.oneOf(gendersList),
+  onGenderChange: PropTypes.func.isRequired
 }
 
 export default GenderInput;
